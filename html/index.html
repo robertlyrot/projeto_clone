@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha seu Restaurante</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha o Restaurante</h1>
+
+       
+
+        <div class="restaurante-options">
+            <div class="restaurante" id="restaurant-1" onclick="selectRestaurant(1)">
+                <img src="/assets/nice_burguer.avif" alt="Restaurante 1">
+                <h3>Nice Burguer</h3>
+                <p>Hambúrgueres artesanais deliciosos!</p>
+            </div>
+            <div class="restaurante" id="restaurante-2" onclick="selectRestaurant(2)">
+                <img src="/assets/images.jpeg" alt="Restaurante 2">
+                <h3>La pizzaria Macron</h3>
+                <p>Mejores Pizzas que puedes lembrar-te!</p>
+            </div>
+            <div class="restaurante" id="restaurante-3" onclick="selectRestaurant(3)">
+                <img src="/assets/Los_Pollos.webp" alt="Restaurante 3">
+                <h3>Los pollos hermanos</h3>
+                <p>O Melhor frango frito do mundo!</p>
+            </div>
+        </div>
+        <div id="selectedRestaurant" class="selected-restaurante"></div>
+    </div>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>

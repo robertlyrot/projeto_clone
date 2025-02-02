@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br  ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação iFood</title>
+    <link rel="stylesheet" href="/styles/style4.css">
+</head>
+<body>
+    <header>
+        <button id="voltar-inicio">Voltar para a Página Inicial</button>
+        <h1>Faça seu pedido</h1>
+        
+    </header>
+    <main>
+       
+        <div class="lista-produto">
+            <h2>Produtos</h2>
+            <div id="produto"></div>
+        </div>
+        <div class="carrinho">
+            <h2>Carrinho</h2>
+            <div id="items-carrinho"></div>
+            <div class="pedidos">
+                <p>Subtotal: R$ <span id="subtotal">0.00</span></p>
+                <p>Desconto: R$ <span id="desconto">0.00</span></p>
+                <p>Total: R$ <span id="total">0.00</span></p>
+                <input type="text" id="cupom" placeholder="Insira o cupom">
+                <button id="aplicar-desconto" class="aplicar_desconto">Aplicar Cupom</button>
+            </div>
+        </div>
+    </main>
+    <script src="/script/script_4.js"></script>
+</body>
+</html>

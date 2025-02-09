@@ -1,7 +1,7 @@
 const products = [
-    { id: 1, name: "Hamburguer", description: "aeeiouaksaks.", price: 20.0, img: "/assets/hamburguer.jpg" },
+    { id: 1, name: "Hamburguer", description: "Hamburguer suculento.", price: 20.0, img: "/assets/hamburguer.jpg" },
     { id: 2, name: "Batata Frita", description: "Batata frita sequinha e crocante.", price: 40.0, img: "/assets/batata_frita.jpg" },
-    { id: 3, name: "Refrigerante", description: "Lata de refrigerante.", price: 5.0, img: "/assets/refrigerante.webp" },
+    { id: 3, name: "Refrigerante", description: "Coca-cola.", price: 5.0, img: "/assets/refrigerante.webp" },
 ];
 
 const cupom = {
@@ -28,10 +28,13 @@ function renderProducts() {
             <img src="${produto.img}" alt="${produto.name}">
             <div>
                 <h3>${produto.name}</h3>
-                <p>${produto.description}</p>
+                <p class="descricao">${produto.description}</p>
                 <p>R$ ${produto.price.toFixed(2)}</p>
             </div>
+
             <button class="adicionar" onclick="addToCart(${produto.id})">Adicionar ao Carrinho</button>
+
+          
         `;
         productsContainer.appendChild(produtoEl);
     });
